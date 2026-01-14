@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="light">
     <meta name="supported-color-schemes" content="light">
-    <title>ResuBird Analysis - Light Mode</title>
+    <title>ResuBird Analysis - Modern</title>
     <!--[if gte mso 9]>
     <xml>
         <o:OfficeDocumentSettings>
@@ -16,106 +15,90 @@
     </xml>
     <![endif]-->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
-
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #F2F5F8;
-            font-family: 'Outfit', Helvetica, Arial, sans-serif;
-            color: #2D3748;
-        }
-
-        table {
-            border-collapse: collapse;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        /* Mobile Responsvie */
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+        
+        body { margin: 0; padding: 0; background-color: #F8FAFC; font-family: 'Outfit', Helvetica, Arial, sans-serif; color: #0F172A; -webkit-font-smoothing: antialiased; }
+        table { border-collapse: separate; border-spacing: 0; }
+        a { text-decoration: none; }
+        
+        /* Modern Utilities */
+        .glass-border { border: 1px solid rgba(255,255,255,0.6); }
+        .soft-shadow { box-shadow: 0 10px 30px -10px rgba(0,0,0,0.08); }
+        .bento-card { background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; }
+        
+        /* Mobile Responsive */
         @media only screen and (max-width: 620px) {
-            .container {
-                width: 100% !important;
-                max-width: 100% !important;
-            }
-
-            .mobile-stack {
-                display: block !important;
-                width: 100% !important;
-                padding: 0 !important;
-            }
-
-            .mobile-padding {
-                padding-left: 20px !important;
-                padding-right: 20px !important;
-            }
+            .container { width: 100% !important; max-width: 100% !important; }
+            .mobile-stack { display: block !important; width: 100% !important; padding: 0 !important; }
+            .mobile-full { width: 100% !important; display: block !important; }
+            .mobile-padding { padding-left: 20px !important; padding-right: 20px !important; }
+            .mobile-margin-top { margin-top: 15px !important; }
         }
     </style>
 </head>
-
-<body style="margin:0;padding:0;background-color:#F2F5F8;font-family:'Outfit', Arial, sans-serif;">
-
+<body style="margin:0;padding:0;background-color:#F8FAFC;font-family:'Outfit', Arial, sans-serif;">
+    
     <!-- Main Wrapper -->
-    <table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#F2F5F8">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#F8FAFC">
         <tr>
             <td align="center" style="padding: 40px 0;">
-
+                
                 <!-- Email Container -->
-                <table border="0" cellpadding="0" cellspacing="0" width="100%"
-                    style="max-width:600px; background-color:#FFFFFF; border-radius:16px; overflow:hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border: 1px solid #E2E8F0;">
-
-                    <!-- Logo Header -->
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px; background-color:#FFFFFF; border-radius:32px; overflow:hidden; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);">
+                    
+                    <!-- Decorative Top Bar -->
                     <tr>
-                        <td align="center" style="padding: 35px 0 25px 0; border-bottom: 1px solid #F0F4F8;">
-                            <!-- Branding -->
-                            <div
-                                style="font-size:26px; font-weight:700; color:#FF7D00; display:inline-block; letter-spacing: -0.5px;">
-                                <span style="font-size:26px;">📄</span> <span style="color:#2D3748;">Resu</span>Bird
-                            </div>
+                        <td height="6" style="background: linear-gradient(90deg, #F97316 0%, #EC4899 50%, #8B5CF6 100%);"></td>
+                    </tr>
+
+                    <!-- Header -->
+                    <tr>
+                        <td align="center" style="padding: 40px 0 20px 0;">
+                            <!-- Modern Logo Design -->
+                            <table border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td align="center">
+                                        <div style="font-size: 26px; font-weight: 800; color: #0F172A; letter-spacing: -0.5px; display: flex; align-items: center;">
+                                            <span style="display:inline-block; background: #FFF7ED; color: #F97316; padding: 8px; border-radius: 12px; margin-right: 10px; font-size: 22px; border: 1px solid #FFEDD5;">📄</span>
+                                            ResuBird
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
                         </td>
                     </tr>
 
                     <!-- Hero Section -->
                     <tr>
-                        <td class="mobile-padding" style="padding: 35px 40px 30px 40px; text-align: left;">
-                            <!-- Badge -->
-                            <table border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 20px;">
-                                <tr>
-                                    <td bgcolor="#FFF5EB"
-                                        style="padding: 6px 16px; border-radius: 50px; border: 1px solid #FFD8A8;">
-                                        <div
-                                            style="font-size: 11px; font-weight: 700; color: #E85D04; letter-spacing: 1px; text-transform: uppercase;">
-                                            Premium Analysis</div>
-                                    </td>
-                                </tr>
-                            </table>
-
-                            <!-- Headline -->
-                            <h1
-                                style="margin: 0 0 16px 0; font-size: 32px; line-height: 1.1; color: #1A202C; font-weight: 700;">
-                                Ready to land your <span style="color: #FF7D00;">dream job?</span></h1>
-
-                            <!-- Subtext -->
-                            <p style="margin: 0 0 30px 0; font-size: 16px; line-height: 1.6; color: #4A5568;">
-                                We've analyzed your resume against the industry's top standards. You're close, but a few
-                                tweaks could skyrocket your interview chances.
+                        <td class="mobile-padding" style="padding: 10px 50px 40px 50px; text-align: center;">
+                            <!-- Tag -->
+                            <center>
+                                <div style="display: inline-block; background-color: #F1F5F9; border: 1px solid #E2E8F0; padding: 6px 14px; border-radius: 100px; margin-bottom: 24px;">
+                                    <span style="font-size: 11px; font-weight: 600; color: #64748B; text-transform: uppercase; letter-spacing: 1px;">Premium Analysis Ready</span>
+                                </div>
+                            </center>
+                            
+                            <!-- Headline with Gradient Text Fallback color -->
+                            <h1 style="margin: 0 0 16px 0; font-size: 40px; line-height: 1.1; color: #0F172A; font-weight: 800; letter-spacing: -1px;">
+                                You’re ready for the <br>
+                                <span style="color: #F97316;">next level.</span>
+                            </h1>
+                            
+                            <p style="margin: 0 0 32px 0; font-size: 18px; line-height: 1.6; color: #475569;">
+                                We’ve identified 3 key opportunities in your resume that could double your callback rate.
                             </p>
 
-                            <!-- CTA Button -->
+                            <!-- Modern CTA -->
                             <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                 <tr>
-                                    <td align="left">
+                                    <td align="center">
                                         <div>
                                             <!--[if mso]>
-                                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://example.com" style="height:54px;v-text-anchor:middle;width:240px;" arcsize="50%" stroke="f" fillcolor="#FF7D00">
+                                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://resubird.com/" style="height:54px;v-text-anchor:middle;width:240px;" arcsize="50%" stroke="f" fillcolor="#0F172A">
                                               <w:anchorlock/>
                                               <center>
                                             <![endif]-->
-                                            <a href="https://resubird.com/"
-                                                style="background-color:#FF7D00; color:#ffffff; display:inline-block; font-family:'Outfit', Arial, sans-serif; font-size:16px; font-weight:bold; line-height:54px; text-align:center; text-decoration:none; width:240px; -webkit-text-size-adjust:none; border-radius: 27px; box-shadow: 0 4px 14px rgba(255, 125, 0, 0.25);">Open
-                                                Full Report &rarr;</a>
+                                            <a href="https://resubird.com/" style="background-color:#0F172A; color:#ffffff; display:inline-block; font-family:'Outfit', Arial, sans-serif; font-size:16px; font-weight:600; line-height:54px; text-align:center; text-decoration:none; width:240px; -webkit-text-size-adjust:none; border-radius: 14px; box-shadow: 0 10px 15px -3px rgba(15, 23, 42, 0.2);">View Full Report</a>
                                             <!--[if mso]>
                                               </center>
                                             </v:roundrect>
@@ -127,116 +110,92 @@
                         </td>
                     </tr>
 
-                    <!-- Score Card Section -->
+                    <!-- Bento Grid Dashboard -->
                     <tr>
                         <td class="mobile-padding" style="padding: 0 40px 40px 40px;">
-
-                            <!-- Card Container -->
-                            <table border="0" cellpadding="0" cellspacing="0" width="100%"
-                                style="border-radius: 12px; overflow: hidden; border: 1px solid #E2E8F0; background-color: #FAFAFA;">
-
-                                <!-- Gradient Header Part -->
+                            
+                            <!-- Main Score Card -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #FFF7ED; border: 1px solid #FFEDD5; border-radius: 20px; margin-bottom: 16px;">
                                 <tr>
-                                    <td
-                                        style="background: linear-gradient(135deg, #FF9500 0%, #FF5E00 100%); padding: 2px;">
-                                        <!-- Inner white container -->
-                                        <table border="0" cellpadding="0" cellspacing="0" width="100%"
-                                            bgcolor="#FFFFFF">
+                                    <td style="padding: 24px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                             <tr>
-                                                <td style="padding: 25px;">
-                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                                        <tr>
-                                                            <td width="30%" align="center" valign="middle">
-                                                                <!-- Circular Score -->
-                                                                <div
-                                                                    style="width: 80px; height: 80px; border-radius: 50%; border: 4px solid #FF7D00; text-align: center; line-height: 80px; color: #1A202C; font-size: 28px; font-weight: 800; background-color: #FFFAF5;">
-                                                                    80
-                                                                </div>
-                                                            </td>
-                                                            <td width="70%" valign="middle" style="padding-left: 20px;">
-                                                                <div
-                                                                    style="color: #FF7D00; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px;">
-                                                                    EXCELLENT MATCH</div>
-                                                                <div
-                                                                    style="color: #4A5568; font-size: 14px; font-weight: 500; margin-top: 5px;">
-                                                                    Your system design experience is a standout. Strong
-                                                                    technical fit.
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
+                                                <td width="50" align="center">
+                                                    <div style="width: 50px; height: 50px; background-color: #F97316; border-radius: 50%; color: #FFFFFF; font-size: 20px; font-weight: 700; line-height: 50px;">80</div>
+                                                </td>
+                                                <td style="padding-left: 20px;">
+                                                    <div style="font-size: 16px; font-weight: 700; color: #9A3412;">Excellent Match</div>
+                                                    <div style="font-size: 14px; color: #C2410C;">Top 10% of candidates</div>
+                                                </td>
+                                                <td align="right">
+                                                    <span style="font-size: 24px;">🎉</span>
                                                 </td>
                                             </tr>
                                         </table>
                                     </td>
                                 </tr>
+                            </table>
 
-                                <!-- Metrics & Chart -->
+                            <!-- 2x2 Bento Grid for Metrics -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                 <tr>
-                                    <td style="padding: 25px; background-color: #FFFFFF;">
-                                        <!-- Score Distribution Chart Title -->
-                                        <div
-                                            style="margin-bottom: 20px; font-size: 11px; font-weight: 700; color: #A0AEC0; text-transform: uppercase; letter-spacing: 1px;">
-                                            Performance Breakdown
-                                        </div>
-
-                                        <!-- Bar Chart Visualization -->
-                                        <table border="0" cellpadding="0" cellspacing="0" width="100%"
-                                            style="table-layout: fixed;">
-                                            <tr valign="bottom" style="height: 100px;">
-                                                <!-- Bar 1 -->
-                                                <td align="center" valign="bottom">
-                                                    <div
-                                                        style="font-size: 12px; font-weight: 700; color: #2D3748; margin-bottom: 8px;">
-                                                        65</div>
-                                                    <div
-                                                        style="width: 20px; height: 65px; background-color: #FF7D00; border-radius: 4px 4px 0 0; margin: 0 auto;">
-                                                    </div>
-                                                </td>
-                                                <!-- Bar 2 -->
-                                                <td align="center" valign="bottom">
-                                                    <div
-                                                        style="font-size: 12px; font-weight: 700; color: #2D3748; margin-bottom: 8px;">
-                                                        85</div>
-                                                    <div
-                                                        style="width: 20px; height: 85px; background-color: #00C853; border-radius: 4px 4px 0 0; margin: 0 auto;">
-                                                    </div>
-                                                </td>
-                                                <!-- Bar 3 -->
-                                                <td align="center" valign="bottom">
-                                                    <div
-                                                        style="font-size: 12px; font-weight: 700; color: #2D3748; margin-bottom: 8px;">
-                                                        50</div>
-                                                    <div
-                                                        style="width: 20px; height: 50px; background-color: #FFD600; border-radius: 4px 4px 0 0; margin: 0 auto;">
-                                                    </div>
-                                                </td>
-                                                <!-- Bar 4 -->
-                                                <td align="center" valign="bottom">
-                                                    <div
-                                                        style="font-size: 12px; font-weight: 700; color: #2D3748; margin-bottom: 8px;">
-                                                        75</div>
-                                                    <div
-                                                        style="width: 20px; height: 75px; background-color: #2962FF; border-radius: 4px 4px 0 0; margin: 0 auto;">
-                                                    </div>
-                                                </td>
-                                            </tr>
+                                    <!-- Metric 1 -->
+                                    <td width="48%" valign="top" class="mobile-full" style="padding-right: 8px; padding-bottom: 16px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="bento-card">
                                             <tr>
-                                                <td align="center"
-                                                    style="padding-top: 12px; font-size: 9px; font-weight: 700; color: #718096;">
-                                                    SKILLS</td>
-                                                <td align="center"
-                                                    style="padding-top: 12px; font-size: 9px; font-weight: 700; color: #718096;">
-                                                    EXP</td>
-                                                <td align="center"
-                                                    style="padding-top: 12px; font-size: 9px; font-weight: 700; color: #718096;">
-                                                    IMPACT</td>
-                                                <td align="center"
-                                                    style="padding-top: 12px; font-size: 9px; font-weight: 700; color: #718096;">
-                                                    QUALITY</td>
+                                                <td style="padding: 20px;">
+                                                    <div style="font-size: 11px; font-weight: 600; color: #64748B; text-transform: uppercase; margin-bottom: 8px;">Skills</div>
+                                                    <div style="height: 4px; width: 100%; background-color: #F1F5F9; border-radius: 2px; margin-bottom: 12px; overflow: hidden;">
+                                                        <div style="height: 100%; width: 65%; background-color: #F97316; border-radius: 2px;"></div>
+                                                    </div>
+                                                    <div style="font-size: 20px; font-weight: 700; color: #0F172A;">65<span style="font-size: 12px; color: #94A3B8;">/100</span></div>
+                                                </td>
                                             </tr>
                                         </table>
-
+                                    </td>
+                                    <!-- Metric 2 -->
+                                    <td width="48%" valign="top" class="mobile-full" style="padding-left: 8px; padding-bottom: 16px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="bento-card">
+                                            <tr>
+                                                <td style="padding: 20px;">
+                                                    <div style="font-size: 11px; font-weight: 600; color: #64748B; text-transform: uppercase; margin-bottom: 8px;">Experience</div>
+                                                    <div style="height: 4px; width: 100%; background-color: #F1F5F9; border-radius: 2px; margin-bottom: 12px; overflow: hidden;">
+                                                        <div style="height: 100%; width: 85%; background-color: #10B981; border-radius: 2px;"></div>
+                                                    </div>
+                                                    <div style="font-size: 20px; font-weight: 700; color: #0F172A;">85<span style="font-size: 12px; color: #94A3B8;">/100</span></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <!-- Metric 3 -->
+                                    <td width="48%" valign="top" class="mobile-full" style="padding-right: 8px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="bento-card">
+                                            <tr>
+                                                <td style="padding: 20px;">
+                                                    <div style="font-size: 11px; font-weight: 600; color: #64748B; text-transform: uppercase; margin-bottom: 8px;">Impact</div>
+                                                    <div style="height: 4px; width: 100%; background-color: #F1F5F9; border-radius: 2px; margin-bottom: 12px; overflow: hidden;">
+                                                        <div style="height: 100%; width: 50%; background-color: #F59E0B; border-radius: 2px;"></div>
+                                                    </div>
+                                                    <div style="font-size: 20px; font-weight: 700; color: #0F172A;">50<span style="font-size: 12px; color: #94A3B8;">/100</span></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <!-- Metric 4 -->
+                                    <td width="48%" valign="top" class="mobile-full" style="padding-left: 8px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="bento-card">
+                                            <tr>
+                                                <td style="padding: 20px;">
+                                                    <div style="font-size: 11px; font-weight: 600; color: #64748B; text-transform: uppercase; margin-bottom: 8px;">Quality</div>
+                                                    <div style="height: 4px; width: 100%; background-color: #F1F5F9; border-radius: 2px; margin-bottom: 12px; overflow: hidden;">
+                                                        <div style="height: 100%; width: 75%; background-color: #3B82F6; border-radius: 2px;"></div>
+                                                    </div>
+                                                    <div style="font-size: 20px; font-weight: 700; color: #0F172A;">75<span style="font-size: 12px; color: #94A3B8;">/100</span></div>
+                                                </td>
+                                            </tr>
+                                        </table>
                                     </td>
                                 </tr>
                             </table>
@@ -244,25 +203,24 @@
                         </td>
                     </tr>
 
-                    <!-- Footer -->
+                    <!-- Minimal Footer -->
                     <tr>
-                        <td align="center" style="padding: 0 40px 40px 40px; border-top: 1px solid #F0F4F8;">
-                            <p
-                                style="margin-top: 30px; margin-bottom: 20px; font-size: 14px; color: #2D3748; font-weight: 600;">
-                                Join the discussion</p>
+                        <td align="center" style="padding: 0 40px 40px 40px; background-color: #FFFFFF;">
+                            <div style="height: 1px; width: 100%; background-color: #F1F5F9; margin-bottom: 30px;"></div>
+                            
                             <table border="0" cellpadding="0" cellspacing="0">
                                 <tr>
-                                    <td style="padding: 0 15px;"><a href="#"
-                                            style="text-decoration:none; font-size:24px; color: #718096;">💬</a></td>
-                                    <td style="padding: 0 15px;"><a href="#"
-                                            style="text-decoration:none; font-size:24px; color: #718096;">✈️</a></td>
-                                    <td style="padding: 0 15px;"><a href="#"
-                                            style="text-decoration:none; font-size:24px; color: #718096;">👾</a></td>
+                                    <td style="padding: 0 10px;"><a href="#" style="font-size: 14px; font-weight: 600; color: #64748B;">Twitter</a></td>
+                                    <td style="padding: 0 10px; color: #CBD5E1;">•</td>
+                                    <td style="padding: 0 10px;"><a href="#" style="font-size: 14px; font-weight: 600; color: #64748B;">Discord</a></td>
+                                    <td style="padding: 0 10px; color: #CBD5E1;">•</td>
+                                    <td style="padding: 0 10px;"><a href="#" style="font-size: 14px; font-weight: 600; color: #64748B;">LinkedIn</a></td>
                                 </tr>
                             </table>
-                            <p style="font-size: 11px; color: #A0AEC0; margin-top: 25px; line-height: 1.6;">
-                                © 2026 ResuBird Inc. • <a href="#"
-                                    style="color: #A0AEC0; text-decoration: underline;">Unsubscribe</a>
+                            
+                            <p style="font-size: 12px; color: #94A3B8; margin-top: 24px; line-height: 1.5;">
+                                © 2026 ResuBird. All rights reserved.<br>
+                                Unsubscribe from these emails
                             </p>
                         </td>
                     </tr>
@@ -273,5 +231,4 @@
     </table>
 
 </body>
-
 </html>
